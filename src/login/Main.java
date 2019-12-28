@@ -32,7 +32,7 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		try {
-			server = new Socket("localhost", 50000);
+			server = new Socket("cs-cnu.tk", 50000);
 		} catch (IOException e) {
 			server = null;
 		}
