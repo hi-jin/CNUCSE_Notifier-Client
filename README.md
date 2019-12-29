@@ -27,7 +27,7 @@ server => https://github.com/hi-jin/CNUCSE_Notifier-Server
 
 <img src="/readmeImages/3.png" width="40%"></img>
 
-휴지통 버틍을 누르면 삭제한 공지를 확인할 수 있다. (시간이 흘러 삭제한 공지가 학과 홈페이지 1페이지에서 밀려나면, 영구 삭제 된다.)
+휴지통 버튼을 누르면 삭제한 공지를 확인할 수 있다. (시간이 흘러 삭제한 공지가 학과 홈페이지 1페이지에서 밀려나면, 영구 삭제 된다.)
 
 <img src="/readmeImages/4.png" width="40%"></img>
 
