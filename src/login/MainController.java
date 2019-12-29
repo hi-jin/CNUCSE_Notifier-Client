@@ -34,7 +34,7 @@ public class MainController implements Initializable {
 			PrintWriter out = new PrintWriter(new BufferedOutputStream(Main.getServer().getOutputStream()));
 			out.println("login/#/" + loginTextField.getText());
 			out.flush();
-			Thread.sleep(200);
+			Thread.sleep(500);
 			if(Listener.isLogined == 1) {
 				FXMLLoader loader = new FXMLLoader(getClass().getResource("../main/MainPage.fxml"));
 				models.Controllers.mainPageController = (MainPageController) loader.getController();
