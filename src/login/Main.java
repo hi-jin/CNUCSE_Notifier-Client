@@ -1,7 +1,9 @@
 package login;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.net.Socket;
+import java.nio.charset.Charset;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -31,6 +33,15 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		try {
+			System.setProperty("file.encoding","UTF-8");
+			Field charset = Charset.class.getDeclaredField("defaultCharset");
+			charset.setAccessible(true);
+			charset.set(null,null);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		try {
 			server = new Socket("cs-cnu.tk", 50000);
 		} catch (IOException e) {
